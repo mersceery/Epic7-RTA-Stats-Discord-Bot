@@ -18,12 +18,10 @@ async def on_ready():
     print(f"Logged in as {bot.user.name}")
 
 
-# Event handler for when a message is received
 @bot.event
 async def on_message(message):
     if message.content.startswith("!"):
         try:
-            # Your bot's response
             username = f"E7 RTA Stats for user: **{message.content[1:]}**"
 
             # Call the trialRequest.rta_stats function and catch any exceptions
@@ -52,4 +50,4 @@ async def on_message(message):
 
 
 # Run the bot with your token
-bot.run("MTE2Nzg3Mzc3NTMzMzgwMjA5NA.GiLYCD.sWde_AneVkDRHO-7N53lByFfmIDO8XyxBvkeyI")
+bot.run("SECRET")
